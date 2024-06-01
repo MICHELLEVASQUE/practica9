@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StackLayout.Ejercicio3_complementario.EJERCICIO3"
+             Title="EJERCICIO3">
+    <!---<Summary>
+      <Createddate> 29 may.2024</Createddate>
+      <company> EJERCICIO3  </company>
+      <lastmodificationdate> 28 may.2024 </lastmodificationdate>
+      <lastmodificationdescription>
+      ultima modificacion: Agregue la documentacion XML al programa
+      </lastmodificationdescription>
+      <lastmodifierautor> Julissa Martinez </lastmodifierautor>
+      </Summary>-->
+        <!---<summary>
+        Permite construir un programa para calcular el promedio de cinco calificaciones por medio de 5 entrys que guardan
+    los datos ingresados , y un entry que hara el trabajo en la operación para calcular el promedio y un boton
+    que nos permitira crear un evento para mostrar el resultado obtenido de las calificaciones ingresadas</summary>
+     <param name="sender"></param>
+     <param name="e"></param>-->
+    <VerticalStackLayout>
+        <Label 
+            Text="PROMEDIO DE 5 CALIFICACIONES!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry x:Name="entry1" Placeholder="Introducir el primero numero"/>
+        <Entry x:Name="entry2" Placeholder="Introducir el segundo numero"/>
+        <Entry x:Name="entry3" Placeholder="Introducir el primero numero"/>
+        <Entry x:Name="entry4" Placeholder="Introducir el segundo numero"/>
+        <Entry x:Name="entry5" Placeholder="Introducir el primero numero"/>
+        <Entry x:Name="entryr" Placeholder="Resultado"/>
+        <Button Text="Calcular Promedio" Clicked="Button_Clicked" Margin="10"/>
+        <Button Text="Click aqui" Clicked="Button_Clicked_1" Margin="10"/>
+
+    </VerticalStackLayout>
+</ContentPage>

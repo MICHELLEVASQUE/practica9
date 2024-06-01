@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StackLayout.MainPage">
+    <!---<Summary>
+  <Createddate> 26 may.2024</Createddate>
+  <company> Xamarin 04  </company>
+  <lastmodificationdate> 28 may.2024 </lastmodificationdate>
+  <lastmodificationdescription>
+  ultima modificacion: Agregue la documentacion XML al programa
+  </lastmodificationdescription>
+  <lastmodifierautor> Julissa Martinez </lastmodifierautor>
+  </Summary>-->
+
+    <!---<summary>
+  permite organizar elementos secundarios ya sea horizontal o vertical, el label 
+    nos permite mostrar un texto colocamos el texto centrado, permitimos el texto mediano
+    creamos otro metodo uno donde nos permite colocar multiples opciones de presentacion de textos como fuentes
+    y colores de ahi colocamos texto con diferente fuente, colores, atributos y si queremos subrayados,al final solo colocamos
+    un boton para mandarnos a la siguiente pagina
+    </summary>
+  <param name="sender"></param>
+  <param name="e"></param>-->
+
+    <StackLayout Margin="20,35,20,20">
+        <Label FontSize="Medium">
+               <Label.FormattedText>
+            <FormattedString>
+                    <Span TextDecorations="Strikethrough" FontAttributes="Bold" TextColor="Green">PROGRAMACION ORIENTADA A OBJETOS</Span>
+                    <Span FontAttributes="Italic" TextColor="Blue">ES UN PARADIGMA LA PROGRAMACION</Span>
+                    <Span TextColor="Gray" TextDecorations="Strikethrough">QUE NO AYUDA A OBTENER MEJOR RESULTADOS</Span>
+                
+            </FormattedString>
+            </Label.FormattedText>
+            
+        </Label>
+        <Button Text="Click aqui" Clicked="Button_Clicked"/>
+
+
+
+    </StackLayout>
+
+</ContentPage>

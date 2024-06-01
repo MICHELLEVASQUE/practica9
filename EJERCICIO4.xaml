@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StackLayout.Ejercicio4_complementario.EJERCICIO4"
+             Title="EJERCICIO4">
+    <!---<Summary>
+  <Createddate> 29 may.2024</Createddate>
+  <company> EJERCICIO4  </company>
+  <lastmodificationdate> 28 may.2024 </lastmodificationdate>
+  <lastmodificationdescription>
+  ultima modificacion: Agregue la documentacion XML al programa
+  </lastmodificationdescription>
+  <lastmodifierautor> Julissa Martinez </lastmodifierautor>
+  </Summary>-->
+    <!---<summary>
+    Permite construir un programa para calcular el resultado al cuadrado y al cubo de un numero ingresado por un usuario
+    esto sera guardo por un entry que nos permitira calcular las operaciones de distinta manera y mostrado 
+    el resultado por un evento </summary>
+ <param name="sender"></param>
+ <param name="e"></param>-->
+    <VerticalStackLayout>
+        <Label 
+            Text="AL CUADRADO Y AL CUBO!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry x:Name="entry1" Placeholder="Introduzca el numero"/>
+        <Entry x:Name="entrycubo" Placeholder="Resultado al cubo"/>
+        <Entry x:Name="entrycuadrado" Placeholder="Resultado al cuadrado" Margin="10"/>
+        <Button Text="Calcular Resultados" Clicked="Button_Clicked"/>
+        <Label x:Name="resultadoLabel" FontSize="18" IsVisible="True"/>
+        
+        <Button Text="Click aqui" Clicked="Button_Clicked_1" Margin="10"/>
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StackLayout.Ejercicio1_complementario.Ejercicio1"
+             Title="Ejercicio1">
+    <!---<Summary>
+ <Createddate> 26 may.2024</Createddate>
+ <company> Ejercicio1  </company>
+ <lastmodificationdate> 28 may.2024 </lastmodificationdate>
+ <lastmodificationdescription>
+ ultima modificacion: Agregue la documentacion XML al programa
+ </lastmodificationdescription>
+ <lastmodifierautor> Julissa Martinez </lastmodifierautor>
+ </Summary>-->
+    <!---<summary>
+    permite organizar elementos secundarios ya sea horizontal o vertical,colocamos un texto 
+      centrado para que nos indica que sera nuestra aplicacion
+      coloque un imagen que haga referencia al ejercicio y una ancho de 200, coloque unos entry
+      lo cual se le coloca nombres para distinguir a cada uno el placeholder indicando que tiene que digitar
+      el ancho del espacio que nos otorga y la distancia de cada uno de ellos, coloco un boton lo cual nos 
+      hara el resultado de lo que nosotros queremos y el otro es para dirigirnos a una nueva pagina</summary>
+    <param name="sender"></param>
+    <param name="e"></param>-->
+    <VerticalStackLayout>
+        <Label 
+            Text="SOLICITAR 4 NUMEROS "
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry x:Name="entry1" Placeholder="Introducir el primero numero"/>
+        <Entry x:Name="entry2" Placeholder="Introducir el segundo numero"/>
+        <Entry x:Name="entry3" Placeholder="Introducir el tercero numero"/>
+        <Entry x:Name="entry4" Placeholder="Introducir el cuarto numero"/>
+        <Entry x:Name="entryr" Placeholder="Resultado"/>
+        <Button Text="Invertir Orden" Clicked="Button_Clicked" Margin="10"/>
+        <Button Text="Click aqui" Clicked="Button_Clicked_1" Margin="10"/>
+    </VerticalStackLayout>
+</ContentPage>

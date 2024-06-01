@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StackLayout.XAMARIN06.Xamarin06"
+             Title="Xamarin06">
+    <!---<Summary>
+ <Createddate> 26 may.2024</Createddate>
+ <company> Xamarin 06  </company>
+ <lastmodificationdate> 28 may.2024 </lastmodificationdate>
+ <lastmodificationdescription>
+ ultima modificacion: Agregue la documentacion XML al programa
+ </lastmodificationdescription>
+ <lastmodifierautor> Julissa Martinez </lastmodifierautor>
+ </Summary>-->
+    <!---<summary>
+   permite organizar elementos secundarios ya sea horizontal o vertical, el entry
+    nos permite crear un espacio vacio con el placeholder indicamos que tiene que digitar
+    tambien un maximo de caracteres permitidos, corregir errores ortograficos,
+    predecir texto colocado, ocultar contraseña en falso, el keyboar lo dejamos solo en nuumeros
+    de ahi un espacio entre caracteres, colocamos un nuevo evento que permite el validar lo que digitamos
+    y creamos ottro evento es para guardar y un button que permite guiarnos a otra pagina</summary>
+   <param name="sender"></param>
+   <param name="e"></param>-->
+    <VerticalStackLayout Margin="20,35,20,20">
+        <Entry Placeholder="Usuario"
+               MaxLength="10"
+               IsSpellCheckEnabled="True"
+               IsTextPredictionEnabled="True"
+               IsPassword="True"
+               Keyboard="Numeric"
+               CharacterSpacing="10"
+               TextChanged="Entry_TextChanged"
+               Completed="Entry_Completed"/>
+        <Button Text="Click aqui" Clicked="Button_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StackLayout.Ejercicio5_complementario.Ejercicio5"
+             Title="Ejercicio5">
+    <!---<Summary>
+ <Createddate> 29 may.2024</Createddate>
+ <company> EJERCICIO5 </company>
+ <lastmodificationdate> 28 may.2024 </lastmodificationdate>
+ <lastmodificationdescription>
+ ultima modificacion: Agregue la documentacion XML al programa
+ </lastmodificationdescription>
+ <lastmodifierautor> Julissa Martinez </lastmodifierautor>
+ </Summary>-->
+    <!---<summary>
+   Permite construir un programa para calcular el resultado del perimetro y area de un rectangulo
+    los datos se altura y base se guardaran por medio de 2 entry y los calculos se haran por medio de los entrys denominados
+    para el area y el perimetro tanto como el veneto creado sea realizado por el usuario</summary>
+<param name="sender"></param>
+<param name="e"></param>-->
+    <VerticalStackLayout>
+        <Label 
+            Text="CALCULAR EL PERIMETRO Y BASE DEL RECTANGULO!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry x:Name="entry1" Placeholder="Introducir el altura" Margin="10"/>
+        <Entry x:Name="entry2" Placeholder="Introducir la base" Margin="10"/>
+        
+        <Entry x:Name="entryperimetro" Placeholder="Resultado Perimetro" Margin="10"/>
+        <Entry x:Name="entryarea" Placeholder="Resultado Area" Margin="10"/>
+        <Button Text="Calcular Perimetro y Area del Rectangulo" Clicked="Button_Clicked" Margin="10"/>
+
+    </VerticalStackLayout>
+</ContentPage>

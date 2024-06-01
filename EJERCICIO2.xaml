@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StackLayout.Ejercicio2_complementario.EJERCICIO2"
+             Title="EJERCICIO2">
+    <!---<Summary>
+    <Createddate> 29 may.2024</Createddate>
+    <company> EJERCICIO2  </company>
+    <lastmodificationdate> 28 may.2024 </lastmodificationdate>
+    <lastmodificationdescription>
+    ultima modificacion: Agregue la documentacion XML al programa
+    </lastmodificationdescription>
+    <lastmodifierautor> Julissa Martinez </lastmodifierautor>
+    </Summary>-->
+    <!---<summary>
+   Permite construir un programa que permite ingresar lus numeros A y B por medio de dos entrys y que 
+    pueda obtener la verificacion de oro entry para guardar los datos ingresados y hacer la siguiente operación debido
+    a que los valores significativos deben dar una respuesta a la siguiente expresión  (A+B)^2/2  y el resultado es
+    tranferido por medio de un boton Calcular , y si deseamos pasar a la siguiente pagina posee otro botón para el siguiente ejercicio</summary>
+   <param name="sender"></param>
+   <param name="e"></param>-->
+    <VerticalStackLayout>
+        <Label 
+            Text="Operacion matematica !"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry x:Name="entry1" Placeholder="Introducir el primero numero"/>
+        <Entry x:Name="entry2" Placeholder="Introducir el segundo numero"/>
+        <Entry x:Name="entryr" Placeholder="Resultado"/>
+        <Button Text="Calcular" Clicked="Button_Clicked" Margin="10"/>
+        <Button Text="Click me" Clicked="Button_Clicked_1" Margin="10"/>
+    </VerticalStackLayout>
+</ContentPage>
